@@ -47,7 +47,7 @@ For example: the client can create his cart just adding his first product.
 * As I assume that the focus should be in the addition process, I just left the work of creating the new Cart by calling the API as Get Cart or even Adding your first Product.
 * Thanks to that I will just use the request session id to assign the cart to its respective owner. It does not matter if it was already created before or not. 
 * I dont know how many products can be in the cart, so to maintain the performance stable I wont calculate all the rules every time I modify the cart. Instead I just add or subtract for these
-particular product, due to this strategy I keep the time complexity between logN and N for every insertion and calculation.
+particular product, due to this strategy I keep the time complexity as constant time instead of between logN and N for every insertion and calculation.
 * I researched libraries to operate with currencies and I found javax.money really interesting so I added it to the app.
 * As I used the **TDD** methodology from the beginning the, most of the application is covered by tests. 
 * The use cases of the document were tested in the Test file "`CashierApplicationTests.java`"
